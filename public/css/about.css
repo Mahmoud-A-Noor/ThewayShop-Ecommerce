@@ -1,0 +1,256 @@
+#about-header{
+    background-image: url("../images/all-bg-title.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-bottom: 4em;
+}
+
+#about-header-text-container{
+    background-color: rgba(0,0,0,0.6);
+    padding : 60px 0px;
+}
+
+#about-header p{
+    color: #fff;
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+#about-header-button{
+    font-size: 1.1rem;
+    background-color: #d33b33;
+    padding: 0.8em;
+}
+
+#about-header-button-home-link{
+    text-decoration: none;
+    color: white;
+}
+
+
+#about-thewayshop-info{
+    padding-left: 13em;
+    padding-right: 13em;
+    padding-top: 0em;
+    padding-bottom: 0em;
+}
+
+#about-thewayshop-info .container:nth-child(1){
+    padding-bottom: 2em;
+}
+
+#about-thewayshop-info-text h2{
+    margin-bottom: 0.5em;
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1.8em;
+    font-style: italic;
+}
+
+#about-thewayshop-info-text p{
+    font-size: 0.95rem;
+    line-height: 25px;
+    color: #666666;
+    font-family: 'Quattrocento Sans', sans-serif;
+}
+
+#skill-info{
+    padding: 0em 13em;
+}
+
+
+.about-thewayshop-info-box-container{
+    padding-top: 2em;
+    padding-bottom: 0em;
+    padding-left: 0em;
+    padding-right: 0em;
+}
+
+.about-thewayshop-info-box-left{
+    padding: 0em 0.17em;
+    background-color: black;
+}
+
+@keyframes about-thewayshop-info-box-left-overlay-animation {
+    0% {
+        height: 0%;
+    }
+    100% {
+        height: 100%;
+    }
+}
+
+.about-thewayshop-info-box-left-overlay{
+    left: 0px;
+    top: 0px;
+    padding: 0em 0.17em;
+    height: 0%;
+    background-color: #d33b33;
+    transition: all 0.5s ease;
+
+    animation-name: none;
+    animation-duration: 0.5s;
+}
+
+.about-thewayshop-info-box-container:hover .about-thewayshop-info-box-left-overlay{
+    animation-name: about-thewayshop-info-box-left-overlay-animation;
+    height: 100%;
+}
+
+
+
+.about-thewayshop-info-box-text-container{
+    padding: 1em 1em;
+    line-height: 1.7rem;
+}
+
+
+.about-thewayshop-info-box-text-container h2{
+    font-size: 1.65rem;
+    font-weight: 600;
+    font-family: 'Quattrocento Sans', sans-serif;
+}
+
+.about-thewayshop-info-box-text-container p{
+    color:#666666;
+    font-family: 'Quattrocento Sans', sans-serif;
+}
+
+
+
+#team{
+    margin: 5em 10em;
+}
+
+#team .container{
+    padding: 0em 3em;
+}
+
+#team .container h1{
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1.8em;
+    font-style: italic;
+}
+
+.team-member{
+    border-bottom: solid 1px #e6e6e6;
+}
+
+.team-member-image{
+    /* overflow: hidden; */
+}
+
+.team-member-description{
+    padding-bottom: 1.2em;
+    padding-top: 1.2em;
+}
+
+.team-member-description p{
+    color: #666666;
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.7em;
+    padding-bottom: 1.2em;
+}
+
+
+#team-overlay-icons{
+    left: -40px;
+    bottom: 25px;
+}
+
+#team-overlay-icons li i{
+    padding-left: 0.7em;
+    padding-right: 0.7em;
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
+    font-size: 1rem;
+    color: white;
+    background-color: black;
+    transition: all 0.4s;
+    transition-delay: 100ms;
+}
+
+#team-overlay-icons li:nth-child(4) i {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    font-size: 1.13rem;
+    color: white;
+    background-color: black;
+}
+
+#team-overlay-icons li:nth-child(4) i:hover {
+    padding-right: 0.75em;
+    background-color: #d33b33;
+}
+
+#team-overlay-icons li i:hover {
+    padding-right: 1em;
+    background-color: #d33b33;
+}
+
+@keyframes team-overlay-icons-animation {
+    0%{
+        left: 0px;
+    }
+    100%{
+        left: 40px;
+    }
+}
+
+
+.team-member:hover #team-overlay-icons i{
+    animation-name: team-overlay-icons-animation;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+#team-overlay-icons li:nth-child(1) i{
+    left: -40;
+    bottom: 0px;
+    transition: all 0.3s;
+    transition-delay: 0ms;
+}
+
+#team-overlay-icons li:nth-child(2) i{
+    left: -40;
+    bottom: 38px;
+    transition: all 0.3s;
+    animation-delay: 100ms;
+}
+
+#team-overlay-icons li:nth-child(3) i{
+    left: -40;
+    bottom: 76px;
+    transition: all 0.3s;
+    animation-delay: 200ms;
+}
+
+
+#team-overlay-icons li:nth-child(4) i{
+    left: -40;
+    bottom: 114px;
+    transition: all 0.3s;
+    animation-delay: 300ms;
+}
+
+
+
+#team-image-plus-icon{
+    font-weight: bolder;
+    padding-left: 0.7em;
+    padding-right: 0.7em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    font-size: 1.05rem;
+    left: 0;
+    bottom: 0;
+    background-color: #d33b33;
+    color: whitesmoke;
+}

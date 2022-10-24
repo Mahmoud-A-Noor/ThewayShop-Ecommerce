@@ -1,0 +1,161 @@
+#shop{
+    margin: 3em 10em
+}
+
+
+#shop-search input{
+    outline: none;
+    padding: 0.8em 1em;
+    border: none;
+    background-color: #f6f6f6;
+}
+
+#shop-search input::placeholder{
+    color: #000000;
+}
+
+#shop-search button{
+    all: unset;
+    cursor: pointer;
+    padding: 0.6em 0.8em;
+    color: white;
+    background-color: black;
+    font-size: 1.1rem;
+    font-weight: bolder;
+}
+
+#shop-search button:hover{
+    background-color: #d33b33;
+}
+
+.shop-sidebar-header{
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 600;
+    border-bottom: 3px solid black;
+    padding: 1em 0em;
+}
+
+.sub-menu-toggler{
+    text-decoration: none;
+    color: #495057;
+    background-color: #e9ecef;
+    font-size: 0.9rem;
+    padding: 0.5em 1.5em;
+}
+
+.sub-menu-toggler:hover{
+    color: #d33b33;
+    background-color: white;
+}
+
+.sub-menu{
+    margin-left: 1.5em;
+    border-left: 1px solid #ced4da;
+}
+
+.sub-menu li{
+    padding: 0.5em 1.5em;
+}
+
+.sub-menu span{
+    color: #ced4da;
+    font-size: 1.5rem;
+    top: -0.5em;
+    left: 0;
+}
+
+.sub-menu a{
+    text-decoration: none;
+    color: #495057;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.sub-menu a:hover{
+    color: #d33b33;
+}
+
+.small{
+    color: #555555;
+    font-size: 0.7rem;
+}
+
+
+#shop-brands{
+    height: 315px;
+    overflow: scroll;
+}
+
+.shop-brand{
+    padding: 0.5em 0em;
+}
+
+.shop-brand input{
+    margin-right: 0.3em;
+}
+
+.shop-brand label{
+    color: #666666;
+    font-size: 0.9rem;
+    font-family: 'Quattrocento Sans', sans-serif;
+}
+
+
+#shop-content-header{
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;;
+    padding: 0.4em;
+}
+
+
+#shop-content-header span{
+    margin-right: 0.5em;
+    color: #666666;
+    font-size: 0.95rem;
+    font-family: 'Quattrocento Sans', sans-serif;
+}
+
+.custom-select{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='white' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E")
+}
+
+#sortby-select{
+    background-color: black;
+    color: white;
+}
+
+#sortby-select:hover{
+    background-color: #d33b33;
+}
+
+#sortby-select option:hover{
+    cursor: pointer;
+    color: black;
+    background-color: #d33b33;
+}
+
+#shop-content-view span{
+    margin-left: 2em;
+    color: #666666;
+    font-size: 0.95rem;
+    font-family: 'Quattrocento Sans', sans-serif;
+}
+
+.shop-selected-view{
+    color: white !important;
+    background-color: #d33b33 !important;
+}
+
+
+#shop-content-view div i{
+    color: black;
+    background-color: white;
+    font-size: 1.2rem;
+    padding: 0.5em 0.7em;
+}
+
+#shop-content-view div i:hover{
+    color: white !important;
+    background-color: black !important;
+}

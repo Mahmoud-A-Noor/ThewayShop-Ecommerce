@@ -1,0 +1,146 @@
+#checkout{
+    margin: 3em 0em;
+}
+
+#checkout .container{
+    width: 75%;
+}
+
+.checkout-h3{
+    padding: 0.5em 0em;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.checkout-thin-border{
+    border-bottom: 1px solid black;
+}
+
+.checkout-thick-border{
+    border-bottom: 3px solid black;
+}
+
+#checkout-billing-info{
+    margin-top: 1.5em;
+}
+
+#checkout-login h3:nth-child(2) a, #checkout-register h3:nth-child(2) a{
+    text-decoration: none;
+    color: black;
+}
+
+#checkout-login h3:nth-child(2) a:hover, #checkout-register h3:nth-child(2) a:hover{
+    cursor: pointer;
+    color: #d33b33;
+}
+
+.label{
+    color: #666666;
+    font-size: 0.95rem;
+    font-family: 'Quattrocento Sans', sans-serif;
+}
+
+.larger-label{
+    color: #666666;
+    font-size: 1rem;
+    font-family: 'Quattrocento Sans', sans-serif;
+}
+
+.checkout-input{
+    width: 100%;
+    margin-bottom: 1em;
+    padding: 0.5em 0.6em;
+    border: 1px solid #e8e8e8;
+    font-size: 0.9rem;
+    color: #666666;
+}
+
+#checkout input:focus{
+    outline: none;
+    border: 1px solid #d33b33;
+}
+
+#checkout-login-form  input:focus, #checkout-register-form input:focus{
+    outline: none;
+    border: 1px solid #e8e8e8 !important;
+}
+
+#checkout-login-form a, #checkout-register-form a{
+    text-decoration: none;
+    padding: 0.5em 1em;
+    color: white;
+    font-size: 1.1rem;
+    background-color: #d33b33;
+}
+
+.checkout-select{
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid #e8e8e8;
+}
+
+.checkout-checkbox{
+    width: 1em;
+    height: 1em;
+}
+
+.checkout-checkbox:checked{
+    accent-color: #d33b33;
+}
+
+.checkout-radio{
+    width: 1em;
+    height: 1em;
+}
+
+.checkout-radio:checked{
+    accent-color: #d33b33;
+}
+
+
+#shipping-methods{
+    margin-top: 1.5em;
+}
+
+.shipping-methods-label{
+    color: #666666;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'Quattrocento Sans', sans-serif;
+}
+
+#shipping-methods small{
+    margin-left: 2em;
+    color: #666666;
+    font-size: 0.75rem;
+    font-family: 'Quattrocento Sans', sans-serif;
+}
+
+.shipping-method{
+    margin-bottom: 1em;
+}
+
+#checkout-shopping-cart-items{
+    margin-top: 1em;
+}
+
+.checkout-shopping-cart-item{
+    background-color: #f8f9fa;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.checkout-shopping-cart-item p{
+    margin-bottom: 0.5em;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.checkout-shopping-cart-item small{
+    color: #6c757d;
+    font-size: 0.75rem;
+    font-family: 'Quattrocento Sans', sans-serif;
+}

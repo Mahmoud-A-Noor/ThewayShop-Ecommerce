@@ -1,0 +1,464 @@
+@media (min-width: 1200px){
+    .container {
+    max-width: 1140px;
+    }
+}
+
+#home{
+    background-color: white;
+}
+
+
+/*********************** Carosel ***********************/
+
+@keyframes carosel-animation{
+    0%{
+        opacity: 0.60;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+#home-carousel{
+    position: relative;
+    width: 100%;
+    height: 703.2px;
+    padding-bottom: 0.2em;
+
+    background-image: url(../images/banner-01.jpg);
+    background-position: center;
+
+    transition: all 0.5s ease-in-out;
+
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+}
+
+#overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+
+.arrow-icon{
+    font-size: 2rem;
+    color: white;
+}
+
+
+#carousel-button-right{
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#carousel-button-left{
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 530px){
+    .arrow-icon{
+        font-size: 1rem;
+        color: white;
+    }
+
+    #carousel-button-right{
+        width: 35px;
+        height: 35px;
+    }
+
+    #carousel-button-left{
+        width: 35px;
+        height: 35px;
+    }
+}
+    
+
+#carousel-text-container{
+    margin: auto 0;
+}
+
+#carousel-text-container h1{
+    font-size: 4rem;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+}
+
+@media screen and (max-width: 530px){
+    #carousel-text-container h1{
+        font-size: 2rem;
+    }
+}
+    
+
+#carousel-text-container p{
+    font-size: 1rem;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#carousel-text-container a{
+    width: 200px;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-top: 1em;
+    font-size: 2rem;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    background-color: black;
+}
+
+
+
+.indicator{
+    width: 30px;
+    height: 30px;
+    border: 2px solid white;
+    margin: 5px 5px;
+}
+
+/***************categories*************************/
+
+#categories{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.category{
+    position: relative;
+    padding: 0;
+    border: 1px solid black;
+    margin: 1em
+}
+
+
+.category a{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size: 1.2rem;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    background-color: black;
+    text-align: center;
+}
+
+/******************featured products***********************/
+
+#featured-products{
+    width: 100%;
+    margin-top: 5em;
+    padding: 5em;
+    background-color: white;
+}
+
+@media screen and (max-width: 770px){
+    #featured-products{
+        width: 90%;
+        padding: 1em;
+    }
+}
+
+#featured-products h2{
+    font-size: 1.75rem;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    text-align: center;
+}
+
+#featured-products p{
+    font-size: 1rem;
+    color: gray;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+#featured-products button{
+    width: auto;
+    text-decoration: none;
+    border: none;
+    padding: 10px 30px;
+    margin-top: 0.7em;
+    margin-left: 0.1em;
+    margin-right: 0.1em;
+    font-size: 1rem;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(185, 0, 0);
+}
+
+#featured-product-tag p{
+    position: absolute;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    font-weight: bold;
+    background-color: rgb(247, 51, 51);
+    padding: 0.2em 0.7em ;
+    top: 0px;
+    right: 0px;
+    z-index: 9;
+}
+
+@keyframes featured-product-overlay{
+    0%{
+        height: 0%;
+    }
+    100%{
+        top: 0%;
+        height: 100%;
+    }
+}
+
+@keyframes featured-product-overlay-2{
+    0%{
+        top: 0%;
+        height: 100%;
+    }
+    100%{
+        height: 0%;
+    }
+}
+
+
+#featured-product-image-overlay{
+    width: 100%;
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.5);
+    transition: all 0.3s ease-in;
+
+    animation-name: featured-product-overlay;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+}
+
+
+#featured-product-image-overlay ul li{
+    background-color: #d33b33;
+    color: white;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+}
+
+#featured-product-image-overlay a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    font-weight: bold;
+    background-color: rgb(247, 51, 51);
+    padding: 1em 2em ;
+    bottom: 0px;
+    right: 0px;
+}
+
+
+#featured-product-text{
+    line-height: 1.1em;
+    background-color: #f5f5f5;
+}
+
+#featured-product-text p{
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#featured-product-text p:nth-child(2){
+    font-size: 1.1rem;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+}
+
+
+/***************latest blogs******************/
+
+#latest-blog{
+    width: 100%;
+    margin-top: 5em;
+    padding: 5em;
+    background-color: #f5f5f5;
+}
+
+@media screen and (max-width: 450px){
+    #latest-blog{
+        padding: 1em;
+    }
+}
+
+#latest-blog h2{
+    font-size: 1.75rem;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    text-align: center;
+}
+
+#latest-blog p{
+    font-size: 1rem;
+    color: gray;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.fluid-image{
+    max-width: 100%;
+    height: auto;
+}
+
+/* top right bottom left */
+
+.blog-content{
+    position: relative;
+}
+
+.blog-text{
+    padding: 2em 1em 2em 3em;
+    background-color: white;
+}
+
+.blog-content h3{
+    font-size: 1.1rem;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.blog-content p{
+    font-size: 0.9rem;
+    color: gray;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.blog-options{
+    position: absolute;
+    cursor: pointer;
+    left: 0;
+    top: 50%;
+    transform: translate(0%,-50%);
+}
+
+.blog-options ul li{
+    background-color: black;
+    color: white;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+}
+
+.blog-options ul li:hover{
+    background-color: rgb(185, 0, 0);
+}
+
+.custom-tooltip{
+    --bs-tooltip-bg: rgb(185, 0, 0);
+}
+
+/***************instagram carousel******************/
+
+#instagram-carousel{
+    position: relative;
+    width: 100%;
+    background-color: black;
+}
+
+#instagram-carousel-container{
+    padding: 70px 0px;
+    height: 100%;
+}
+
+.instagram-carousel-button{
+    position: absolute;
+    width: 50px;
+    height: 100%;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    background-color: black;
+    z-index: 99;
+}
+
+#instagram-carousel-left-button{
+    left: 0;
+}
+
+#instagram-carousel-right-button{
+    right: 0;
+}
+
+.instagram-carousel-button:hover{
+    background-color: #d33b33;;
+}
+
+#instagram-carousel-content{
+    height: 100%;
+    width: 100%;
+}
+
+
+.instagram-carousel-content-item img{
+    width: 100%;
+    height: 100%;
+}
+
+
+@keyframes instagram-carousel-overlay{
+    0%{
+        top: 100%;
+        height: 0%;
+    }
+    100%{
+        top: 0%;
+        height: 100%;
+    }
+}
+
+@keyframes instagram-carousel-overlay-2{
+    0%{
+        top: 0%;
+        height: 100%;
+    }
+    100%{
+        top: 100%;
+        height: 0%;
+    }
+}
+
+
+.instagram-carousel-image-overlay{
+    width: 100%;
+    background-color: rgba(255, 0, 0, 0.2);
+    transition: all 0.3s ease-in;
+
+    animation-name: instagram-carousel-overlay;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+}
+
+.instagram-carousel-image-overlay a{
+    color: black;
+    font-size: 3rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.instagram-carousel-image-overlay a:hover{
+    color: #d33b33;
+}
