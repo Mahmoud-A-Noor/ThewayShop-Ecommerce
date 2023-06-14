@@ -9,10 +9,10 @@ import Instagram_Carousel from './Instagram_Carousel';
 export default function Home() {
 
     useEffect(() => {
-        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-        return new bootstrap.Tooltip(tooltipTriggerEl)
-        })
+        // var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        // var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        // return new bootstrap.Tooltip(tooltipTriggerEl)
+        // })
 
     }, []);
 
