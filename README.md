@@ -1,4 +1,4 @@
-# E-Commerce-Website
+# ThewayShop Ecommerce
 
 
 This Website is a clone of   "ThewayShop Ecommerce"   using React
